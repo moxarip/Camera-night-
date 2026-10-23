@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">AstroNightCam</string>
+    <string name="mode_night_vision">رؤية ليلية وفيديو</string>
+    <string name="mode_night_sight">تصوير ليلي HDR+</string>
+    <string name="mode_astro">تصوير النجوم والفضاء</string>
+    <string name="red_night_mode">الوضع الأحمر الفلكي</string>
+    <string name="tripod_stable">ثابت (جاهز للفضاء)</string>
+    <string name="tripod_handheld">محمول باليد</string>
+    <string name="gain_boost">تعزيز الإضاءة (Zero-DCE Gain)</string>
+    <string name="temporal_denoise">عزل الضوضاء الزمني</string>
+    <string name="curve_iterations">تكرارات منحنى Zero-DCE</string>
+    <string name="burst_frames">عدد إطارات الدفعة (HDR+ Burst)</string>
+    <string name="shutter_speed">سرعة الغالق (Shutter)</string>
+    <string name="iso_sensitivity">حساسية الضوء (ISO)</string>
+    <string name="focus_distance">التركيز البؤري (Infinity Focus)</string>
+    <string name="astro_submode_deepsky">تكديس النجوم (Sequator)</string>
+    <string name="astro_submode_trails">مسارات النجوم (StarStaX)</string>
+    <string name="foreground_freeze">تجميد الأرضية (Foreground Freeze)</string>
+    <string name="capture_photo">التقاط صورة</string>
+    <string name="start_recording">بدء تسجيل فيديو ليلي</string>
+    <string name="stop_recording">إيقاف التسجيل</string>
+    <string name="stop_stacking">إيقاف التكديس وحفظ الصورة</string>
+    <string name="preview_media">معاينة</string>
+    <string name="open_external">فتح في المعرض</string>
+    <string name="share_media">مشاركة</string>
+    <string name="permission_required_title">صلاحيات الكاميرا والميكروفون مطلوبة</string>
+    <string name="permission_required_desc">يحتاج تطبيق AstroNightCam إلى صلاحية الكاميرا والميكروفون لتشغيل محرك الرؤية الليلية Zero-DCE وتكديس HDR+ وتصوير النجوم عبر Camera2 API.</string>
+    <string name="grant_permissions">منح الصلاحيات</string>
+    <string name="switch_camera">تبديل الكاميرا</string>
+    <string name="infinity_focus_btn">معايرة اللانهاية ∞</string>
+</resources>

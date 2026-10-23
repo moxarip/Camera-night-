@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <group
+        android:scaleX="0.58"
+        android:scaleY="0.58"
+        android:translateX="5.04"
+        android:translateY="5.04">
+        <!-- Camera lens aperture outer ring -->
+        <path
+            android:fillColor="#38BDF8"
+            android:pathData="M12,2C6.48,2 2,6.48 2,12s4.48,10 10,10 10,-4.48 10,-10S17.52,2 12,2zM12,20c-4.41,0 -8,-3.59 -8,-8s3.59,-8 8,-8 8,3.59 8,8 -3.59,8 -8,8z" />
+        <!-- Crescent moon & star inside lens -->
+        <path
+            android:fillColor="#FBBF24"
+            android:pathData="M12.5,6.5c-3.03,0 -5.5,2.47 -5.5,5.5s2.47,5.5 5.5,5.5c1.38,0 2.63,-0.51 3.6,-1.35 -2.27,-0.32 -4.02,-2.27 -4.02,-4.63 0,-2.36 1.75,-4.31 4.02,-4.63 -0.97,-0.84 -2.22,-1.39 -3.6,-1.39zM16.5,8.5l0.6,1.4 1.4,0.6 -1.4,0.6 -0.6,1.4 -0.6,-1.4 -1.4,-0.6 1.4,-0.6z" />
+    </group>
+</vector>

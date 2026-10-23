@@ -1,0 +1,6 @@
+{
+  "name": "AstroNightCam",
+  "description": "كاميرا احترافية للتصوير الليلي والفلكي تجمع بين الرؤية الليلية اللحظية Zero-DCE، وتكديس HDR+ الليلي، وتصوير النجوم ومساراتها عبر Camera2 وOpenGL ES.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
