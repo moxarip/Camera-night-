@@ -142,3 +142,28 @@ dependencies {
   // "ksp"(libs.androidx.room.compiler)
   // "ksp"(libs.moshi.kotlin.codegen)
 }
+
+// Automatically copy the latest compiled Debug APK into `/debug/debug.apk` on every build
+// so that `/debug/debug.apk` always contains the latest version and all future updates.
+val syncDebugApkToFolder by tasks.registering {
+  val apkDir = layout.buildDirectory.dir("outputs/apk/debug")
+  val targetDebugDir = rootProject.layout.projectDirectory.dir("debug")
+  inputs.dir(apkDir).optional()
+  outputs.file(targetDebugDir.file("debug.apk"))
+
+  doLast {
+    val sourceApk = apkDir.get().asFile.walkTopDown().firstOrNull { it.isFile && it.extension == "apk" }
+    if (sourceApk != null && sourceApk.exists()) {
+      val destDir = targetDebugDir.asFile
+      if (!destDir.exists()) destDir.mkdirs()
+      sourceApk.copyTo(destDir.resolve("debug.apk"), overwrite = true)
+    }
+  }
+}
+
+tasks.configureEach {
+  if (name == "packageDebug" || name == "assembleDebug") {
+    finalizedBy(syncDebugApkToFolder)
+  }
+}
+
